@@ -1,6 +1,7 @@
 body {
     font-family: "Times New Roman", Times, serif;
     background-color: #FFEFD6;
+    padding: 0 10px;
 }
 
 .banner {
@@ -91,4 +92,46 @@ a:hover {
 
 li {
     margin-bottom: 10px;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.column {
+  width: 45%;
+}
+
+.column h2 {
+    margin-left: 60px;
+}
+.content h3 {
+  padding-left: 70px;
+}
+.column h4 {
+    margin-left: 60px;
+}
+
+.column ul {
+    margin-left: 60px;
+}
+
+.paragraph-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.heading-padding {
+    padding-left: 50px;
 }
