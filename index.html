@@ -1,22 +1,59 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>Miguel Lopez's Portfolio Page</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      <header>
-        <object type="text/html" data="./banner.html" width="100%" height="200"></object>
-      </header>
-    <h3 class="heading-padding">Who Am I?</h3>
-      <p class="paragraph-padding">
-        &emsp;I am a Virginia Tech sophomore computer science student passionate about technology. I have four years of experience in programming. I was in <a href="https://careercenter.apsva.us/arlington-tech/">Arlington Tech highschool</a>, a program focused on project-based learning. There I took two dual-enrolled computer science courses at Northern Virginia Community College. I have three years of experience with Linux machines making me very efficient around a terminal. I know how to program in three different languages: Python, Java, and C. Throughout my two years in college I have written many school projects including a social media visualizer that online creators can use to track their viewership, a whack-a-mole game, a Tower of Hanoi solver and many more. On top of that, I have worked on some personal projects like a space shooter and a Discord bot. Creativity is incredibly important to me, I am <a href="https://www.adobe.com/creativecloud/adobe/campaign/pricing.html?gclid=CjwKCAjw5dqgBhBNEiwA7PryaC25nbWNi84OUjg9ep55bZDum9W0tzgbgipwfcCSG7pJrkcXue0_GRoCiu0QAvD_BwE&sdid=KKQWX&mv=search&ef_id=CjwKCAjw5dqgBhBNEiwA7PryaC25nbWNi84OUjg9ep55bZDum9W0tzgbgipwfcCSG7pJrkcXue0_GRoCiu0QAvD_BwE:G:s&s_kwcid=AL!3085!3!541671698376!e!!g!!adobe!50818900!3060803800&mv=search">Adobe</a> certified in both Photoshop and Illustrator. I had a graphic design internship over the summer for an independent motivational speaker. 
-      </p>
-    <footer>
-        <p>Contact me at <a href="mailto:miguellpz@vt.edu">miguellpz@vt.edu</a></p>
-    </footer>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="pet_neurolocalization">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>pet_neurolocalization</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1016193467";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
