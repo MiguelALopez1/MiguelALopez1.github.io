@@ -1,59 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="pet_neurolocalization">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>pet_neurolocalization</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1940263672";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Miguel Lopez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info, .education, .experience, .skills {
+            margin-bottom: 2rem;
+        }
+        .contact-info p, .education p, .experience p, .skills p {
+            margin: 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+    <header>
+        <h1>Miguel Lopez</h1>
+        <p>Computer Science Student | Aspiring NASA Engineer</p>
+    </header>
+    <div class="container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: miguel.lopez@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Location: Blacksburg, VA</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/miguellopez" target="_blank">linkedin.com/in/miguellopez</a></p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Virginia Tech</strong></p>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Expected Graduation: May 2025</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <p><strong>Research Assistant</strong></p>
+            <p>Virginia Tech, Blacksburg, VA</p>
+            <p>June 2023 - Present</p>
+            <ul>
+                <li>Conducted research on LDPC code theory.</li>
+                <li>Collaborated with a team to develop new algorithms for error correction.</li>
+                <li>Presented findings at academic conferences.</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Rust, Python, Go, JavaScript</li>
+                <li>Tools: Neovim, Google Colab, Git</li>
+                <li>Machine Learning: Neural Networks, WaveGAN, DiffWave</li>
+                <li>Languages: English, Spanish</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
